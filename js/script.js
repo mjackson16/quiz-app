@@ -8,6 +8,7 @@ const bAnswer = document.getElementById('b');
 const cAnswer = document.getElementById('c');
 const dAnswer = document.getElementById('d');
 const quizContainer = document.querySelector('.quiz-container');
+const quizHeader = document.querySelector('.quiz-header');
 const answerEls = document.querySelectorAll('.answer');
 
 const submitBtn = document.getElementById('submit');
@@ -35,7 +36,7 @@ const quizData = [
 let currentQuestion = 0;
 let answerChoice;
 
-let score = 0;
+let score = 0; 
 
 function loadQuiz() {
     const currentQuizData = quizData[currentQuestion];
@@ -45,12 +46,6 @@ function loadQuiz() {
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
-
-    answerChoice = getChecked();
-
-    if (answerChoice === currentQuizData.correct) {
-        score++;
-    }
 }
 
 function getChecked() {
