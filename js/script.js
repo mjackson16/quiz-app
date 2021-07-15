@@ -31,6 +31,32 @@ const quizData = [
         d: 'alert(“Hello DataFlair!”);',
         correct: 'd',
     },
+    {
+        question: 'How do you create a function in JavaScript?',
+        a: 'function = myFunction()',
+        b: 'function myFunction()',
+        c: 'function:myFunction()',
+        d: 'function.myFunction()',
+        correct: 'a',
+    },
+    {
+        question:
+            'Which built-in method removes the last element from an array and returns that element?',
+        a: 'last()',
+        b: 'get()',
+        c: 'pop()',
+        d: 'None of the above.',
+        correct: 'c',
+    },
+    {
+        question:
+            'Which built-in method returns the string representation of the number\'s value?',
+        a: 'toValue()',
+        b: 'toNumber()',
+        c: 'toString()',
+        d: 'None of the above.',
+        correct: 'c',
+    },
 ];
 
 let currentQuestion = 0;
