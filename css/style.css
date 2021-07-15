@@ -1,4 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Palanquin&display=swap');
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #bdd4e7;
-    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+    background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 100%);
+    font-family: 'Palanquin', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+    padding: 0;
+}
+
+.quiz-container {
+    background-color: #fff;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.quiz-header {
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+button {
+    background-color: #3498db;
+    display: block;
+    height: 3rem;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 1.25rem;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #2a7aaf;
 }
